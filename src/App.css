@@ -1,0 +1,764 @@
+body{
+  padding: 0%;
+  margin: 0%;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* Navbar */
+.nav{
+  background-color: #0099c5;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+.nav .left{
+  width: fit-content;
+
+  padding-left: 20px;
+  font-size: 30px;
+  font-family: fantasy;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+.nav .left #menu_icon{
+  display: none;
+}
+.nav .right{
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+ 
+
+}
+.nav .right .link{
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid #0099c5 ;
+
+}
+.nav .right .link:hover{
+  border-bottom: 1px solid white ;
+}
+
+
+/* Home */
+.font_img{
+  background-image:url('../public/image/font.png');
+ background-size: 100% 100%;
+  height: 90vh;
+ display: flex;
+}
+*{
+  margin: 0;
+}
+.font_img .left,.right{
+  width: 43%;
+  
+}
+.font_img .right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.font_img .right .show{
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.font_img .right .show button{
+  width: fit-content;
+  background: none;
+  border: none;
+  border: 1px solid;
+  color: white;
+  padding: 15px 35px 15px 35px;
+ background-color: #2196f3;
+ transition: 0.4s;
+}
+.font_img .right .show button:hover{
+   background-color: #e0e0e0;
+  color: #2196f3;
+  background-color: none;
+}
+.font_img .right .show h1{
+  color: #047799;
+  font-family: serif;
+}
+.font_img .right .show p{
+  font-family: cursive;
+    color: #686060;
+}
+/* Why  */
+.why{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.why .c-why{
+  width: 80vw;
+  background: #e2dfdf2e;
+  display: flex;
+ 
+}
+.why .c-why .right{
+  display: flex;
+  justify-content: space-around;
+}
+.why .c-why .left,.right{
+  width: 50%;
+  
+  
+}
+.why .c-why .right .c1,.c2{
+  width: 45%;
+    padding: 10px;
+    background-color: #2196f3;
+    color: white;
+    font-family: cursive;
+    transition: .4s;
+ 
+}
+.why .c-why .right .c1:hover{
+  background-color: #487ca5
+}
+.why .c-why .right .c2:hover{
+  background-color: #487ca5
+}
+.why .c-why .right  h5{
+  text-align: center;
+  font-size: 28px;
+  border-bottom: 0.5px solid white;
+  margin-bottom: 10px;
+}
+.why .c-why .left{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+
+    padding: 1px 1px 1px 12px;
+}
+
+
+
+.why .c-why{
+  margin-bottom: 20px;
+}
+.why .c-why .left .btn{
+  width: fit-content;
+  padding: 10px 28px 10px 28px;
+  background: none;
+  border: .1px solid black;
+}
+.why .c-why .left .btn:hover{
+  color: #2196f3;
+  border: .1px solid #0099c5;
+}
+
+
+/* course  */
+
+.p-course h1{
+  font-family: 'Font Awesome 6 Free';
+    word-spacing: 8px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 40px;
+}
+
+.course-card{
+  height: 300px;
+  width: 400px;
+  position: relative;
+}
+.course-card img{
+  height: 70%;
+  width: 100%;
+}
+.course-card .pos{
+  height: 70%;
+  width: 100%;
+  background-color: #ff000042;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.course-card .pos button{
+  text-decoration: none;
+    color: white;
+    border: 1px solid;
+    padding: 10px 41px 10px 41px;
+    border-radius: 5px;
+    background-color: #b23e2d70;
+}
+.course-card .pos{
+  opacity: 0;
+  transition: .5s;
+}
+
+.course-card:hover .pos{
+  opacity: 1;
+}
+.course{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.image-inp nav{
+  background-color: #0099c5;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+}
+.image-inp nav button{
+  background-color: white;
+  border: none;
+  padding: 5px;
+}
+.image-inp{
+  /* height: ; */
+  height: 50vh;
+ 
+}
+.image-inp .ch-imginp{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+
+}
+.image-inp .ch-imginp h3{
+text-align: center;
+}
+.image-inp .ch1,.ch2{
+  height: 100%;
+  width: 50%;
+}
+.image-inp .ch1 img{
+  height: 100%;
+  width: 100%;
+}
+.image-inp .ch2{
+  padding: 20px;
+}
+.image-inp .ch1 button{
+  width: 100%;
+  padding: 13px;
+  background-color: #d84315;
+  border: navajowhite;
+  color: wheat;
+}
+
+.about .ch1{
+ background-image: url('/public/image/about.jpg');
+ height: 60vh;
+ width: 100%;
+ background-attachment: fixed;
+ background-size: 100% 100%;
+}
+
+.about .ch1 .c1{
+  background-color: #10192d9f;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.about .ch1 .c1 .inner{
+  width: 60%;
+}
+.about .ch1 .c1 .inner h1{
+  color: #ffffffdb;
+  text-align: center;
+  font-family: ui-serif;
+  font-size: 55px;
+}
+.about .ch1 .c1 .inner p{
+color: white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about{
+  width: 100%;
+}
+.about .ch2{
+  height: auto;
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.about .ch2 .c1,.c22,.c3 {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.about .ch2  p{
+  font-family: system-ui;
+  /* color: red; */
+}
+.about .ch2 button{
+  width: fit-content;
+    padding: 10px 20px 10px 20px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    transition: .5s;
+    border: 1px solid #2196f3;
+    
+}
+.about .ch2 button:hover{
+  border: 1px solid #047799;
+  color: #047799;
+  background-color: white;
+  
+}
+.about .c2 h2{
+  font-family: system-ui;
+    font-weight: 700;
+}
+
+.about .ch2 .card{
+  width: 100%;
+  height: 100%;
+  display: flex ;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.about .ch3{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.about .ch3 .child{
+  width: 90%;
+  
+}
+.about .ch3 .child p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* employee  */
+
+.employee{
+  margin-bottom: 254px;
+}
+.employee .ch-emp{
+  position: relative;
+  top: 26px;
+}
+.employee .ch-emp .div-emp{
+  background-color: #2196f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.employee .ch-emp .div-emp h2{
+  color: white;
+}
+.employee .ch-emp .div-emp p{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+.emp-card{
+  background: aliceblue;
+  width: 30vw;
+  position: relative;
+   box-shadow: 2px 2px 7px -3px;
+   transition: 0.5s;
+}
+.emp-card:hover{
+  background: antiquewhite;
+}
+.emp-card .details{
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.emp-card .details p{
+  margin: 20px 0px 20px 0px;
+}
+.emp-card .pic{
+
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -25px;
+  
+}
+.emp-card .pic img{
+  height: 106px;
+  width: 106px;
+  border-radius: 300px;
+}
+
+.employee .ch-emp .card-emp{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  position: absolute;
+  top: 38%;
+}
+.p-empcard{
+
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: fit-content;
+}
+
+/* Child  */
+
+.contact{
+  height: fit-content;
+  display: flex;
+}
+.contact .child1,.child2{
+  width: 50%;
+  padding: 10px;
+  }
+
+.contact .child1 img{
+  height: 400px;
+  width: 100%;
+}
+.p-contact{
+position: relative;
+top: 20px;
+}
+.p-contact  h1{
+  text-align: center;
+  margin-bottom: 10px;
+  width: 40%;
+  border-bottom: 1px solid silver;
+
+}
+.contact .child2 .link{
+display: flex;
+justify-content: space-between;
+width: 50%;
+margin-top: 10px;
+}
+.contact .child2 .input{
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact .child2 .input input{
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid silver;
+  outline: none;
+  padding: 18px;
+}
+.contact .child2 .link a{
+  color: black;
+}
+.contact .child2 .input textarea{
+  border-bottom: 1px solid silver;
+  outline: none;
+}
+.contact .child2 .btn button{
+  width: 100%;
+  background-color: #2196f3;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12px;
+}
+
+/* Footer  */
+
+.footer{
+  width: 100%;
+  display: flex;
+  background-color: #4e4e4e;
+  height: fit-content;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 400px;
+  align-items: center;
+}
+.footer .ch11{
+ height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: fit-content;
+}
+.footer .ch22{
+ 
+  width: 300px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.footer .ch11 a{
+  color: white;
+}
+.footer .ch22 a{
+  font-size: 30px;
+  color: rgb(228, 228, 228);
+}
+.footer .ch33 img{
+  height: 170px;
+}
+
+/* ScrolTop  */
+
+.scrollTop {
+  position: fixed;
+
+
+  bottom: 0;
+  right: 1px;
+}
+.scrollTop button{
+  padding: 15px;
+  border: none;
+  background-color: #d84315;
+  color: white;
+}
+
+/* Login */
+
+.p-login{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.316);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 1px;
+  
+}
+
+.p-login .login{
+  height: 400px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+}
+.p-login .login input{
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid silver;
+  outline: none;
+}
+.p-login .login button{
+  width: 100%;
+  background-color: #d84315;
+  border: none;
+  padding: 10px;
+  color: white;
+}
+.login .cross{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+font-size: 20px;
+padding-right: 20px;
+}
+.login .cross:hover{
+  color: red;
+}
+
+
+
+@media screen and (max-width:700px) {
+
+.nav{
+  flex-direction: column;
+  height: fit-content;
+  
+}
+.nav .right{
+  flex-direction: column;
+   background-color: white;
+  width: 100%;
+ 
+}
+
+.nav .right_disp{
+  display: none;
+}
+.nav .right .link{
+  color: blueviolet;
+  padding: 10px;
+}
+.nav .left{
+  width: 97%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+  padding-right: 10px;
+  align-items: center;
+  padding: 7px 0px 7px 0px;
+}
+
+.nav .left #menu_icon{
+  display: block;
+ 
+}
+/* Home  */
+.font_img {
+  height: 100%;
+}
+.font_img .right .show{
+  width: 100%;
+  height: 90%;
+}
+
+.font_img .right{
+  height: 100vh;
+  width: 70%;
+}
+.font_img .left{
+  width: 18%;
+}
+
+/* Home  */
+.why .c-why{
+  flex-direction: column;
+}
+.why .c-why{
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why .c-why .left,.right{
+  width: 100%;
+}
+.why .c-why .right{
+  flex-direction: column;
+}
+.why .c-why .left{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.why .c-why .left h1{
+  font-family: inherit;
+    color: #4e4e4e;
+    margin-bottom: 19px;
+}
+.why .c-why .right .c1,.c2{
+  width: 100%;
+  margin-top: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width: fit-content;
+}
+
+.image-inp .ch-imginp{
+  flex-direction: column;
+}
+
+.about .ch2{
+  
+  height:  fit-content;
+}
+
+/* employee  */
+
+.employee{
+  margin-bottom: 0px;
+}
+.employee .ch-emp .card-emp {
+  flex-direction: column;
+}
+.emp-card{
+  width: 90vw;
+}
+.employee .ch-emp .card-emp{
+  align-items: center;
+  position: unset;
+  background-color: #2196f3;
+
+}
+.employee .ch-emp .div-emp p{
+  text-align: center;
+  
+}
+.p-empcard{
+  height: 343px;
+}
+.employee .ch-emp .div-emp{
+  height: 20vh;
+}
+.p-contact{
+  top: 26px;
+}
+.p-contact h1{
+font-size: 20px;
+width: 100%;
+margin-top: 10px;
+border-bottom: none;
+}
+.contact .child1,.child2{
+  width: 100%;
+}
+.contact{
+  flex-direction: column;
+}
+.p-login .login{
+  width: 84%;
+}
+.p-login{
+  width: 94%;
+}
+}
+
+
+@media screen and (max-width:380px) {
+
+  
+
+ .font_img .right{
+  height: fit-content;
+ }
+ .about .ch2 .c1,.c22,.c3{
+  width: 100%;
+}
+
+
+
+}
+
+
